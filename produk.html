@@ -25,8 +25,11 @@
         }
 
         body {
-            background-image: url(images/background/kopibg.jpg);
-            background-size: cover;
+            background-image: url(images/background/bgkopi.png);
+        }
+
+        h1 p {
+            color: #6C3428;
         }
 
         /* Batas Akhir penulisan kode CSS internal */
@@ -54,10 +57,10 @@
                         <a class="nav-link" href="index.html#best-seller">Best Seller</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#review">Review</a>
+                        <a class="nav-link" href="index.html#our-team">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#our-team">Our Team</a>
+                        <a class="nav-link" href="index.html#review">Review</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact-us">Contact Us</a>
@@ -68,6 +71,158 @@
             </div>
         </div>
     </nav>
+
+    <section class="riki-block produk text-center my-5 py-5">
+        <div class="container">
+            <h1>Pilih Produk Anda</h1>
+            <p class="fs-4">Kualitas terbaik biji kopi pilihan,fresh diambil langsung dari petani</p>
+            <hr class="border border-secondary border-3 opacity-75">
+
+            <!-- Ini Untuk Select -->
+
+            <div class="row gap-2 gap-md-0">
+                <div class="col-md-4">
+                    <div class="input-group input-group-lg h-100">
+                        <button aria-readonly="true" disabled class="btn btn-light" type="button" id="btn-cari-produk">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <input id="cari-produk" type="search" class="form-control" placeholder="Cari Produk ..."
+                            aria-label="Cari produk search">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="select_kopi">
+                            <option selected value="semua">Semua</option>
+                            <option value="arabica">Arabica</option>
+                            <option value="robusta">Robusta</option>
+                            <option value="nonkopi">Non Kopi</option>
+                        </select>
+                        <label for="select_kopi">Pilih Jenis Kopi</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="filter_harga">
+                            <option selected disabled>Silahkan Pilih Harga</option>
+                            <option value="paling_mahal">Paling Mahal</option>
+                            <option value="paling_murah">Paling Murah</option>
+                        </select>
+                        <label for="filter_harga">Urut Harga</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5">
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Capuchino</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    100 Gram
+                                </div>
+                                <div class="col">
+                                    70.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-light w-100"><i class="bi bi-cart3"></i>Beli</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="images/produk/product_espresso.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Espresso</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    100 Gram
+                                </div>
+                                <div class="col">
+                                    40.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-light w-100"><i class="bi bi-cart3"></i>Beli</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="images/produk/product_kopi_susu.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kopi Susu</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    100 Gram
+                                </div>
+                                <div class="col">
+                                    30.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-light w-100"><i class="bi bi-cart3"></i>Beli</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="images/produk/product_latte.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Latte</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    100 Gram
+                                </div>
+                                <div class="col">
+                                    50.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-light w-100"><i class="bi bi-cart3"></i>Beli</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="riki-block footer-small py-4 bg-produk">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <ul class="nav justify-content-center justify-content-md-start">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+                    © 2023 Kopi Kuy. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Batas Akhir penulisan kode Bootstrap -->
