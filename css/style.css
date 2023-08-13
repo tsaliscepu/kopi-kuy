@@ -135,10 +135,10 @@ nav {
    untuk pengguna vscode silahkan arahkan mouse ke kotak warna di bawah
    untuk mengganti warna sesuai keinginan
    */
-   background-color: #198754;
+   background-color: #BA704F;
 
    /* box-shadow membuat efek bayangan */
-   box-shadow: 0 3px 7px -2px #000;
+   box-shadow: 0 3px 7px -2px #6C3428;
 
    /* width mengatur lebar elemen. 100% agar lebarnya full dari kiri sampai kanan layar */
    width: 100%;
@@ -515,10 +515,10 @@ div.kontak {
 /* FOOTER */
 
 footer {
-   background-color: #198754;
+   background-color: #262A56;
    padding-top: 15px;
    padding-bottom: 15px;
-   color: #fff;
+   color: #CEE6F3;
    padding-right: 40px;
    padding-left: 40px;
 }
